@@ -9,21 +9,25 @@
     <meta property="og:image" content="/images/splash.png" />
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/bootstrap-rtl/dist/css/bootstrap-rtl.css" />
     <link rel="stylesheet" href="bower_components/angucomplete-alt/angucomplete-alt.css" />
     <!-- endbower -->
+    <!-- build:css(.tmp) styles/angucomplete.css -->
+    <link rel="stylesheet" href="styles/angucomplete.css">
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/angucomplete.css">
     <!-- endbuild -->
+    <!-- build:css(.tmp) styles/small.css -->
     <link rel="stylesheet"
           media="screen and (max-width: 490px)" href="styles/small.css" />
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/medium.css -->
     <link rel="stylesheet"
           media="screen and (max-width: 680px)" href="styles/medium.css" />
+    <!-- endbuild -->
 
   </head>
   <body ng-app="app" ng-controller="AppController">
