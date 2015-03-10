@@ -12,7 +12,7 @@ describe('when going to the root url', function() {
   it('should have offline and noFacebook', function() {
     // currently the test only supports testing with offline mode and without facebook
     expect(browser.executeScript(function() {
-      return (!SETTINGS.backend && !SETTINGS.noFacebook)
+      return (!SETTINGS.backend && SETTINGS.noFacebook)
     })).toBeTruthy();
   });
 
