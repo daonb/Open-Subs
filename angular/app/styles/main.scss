@@ -26,6 +26,7 @@ body {
 .header,
 .marketing,
 .footer {
+  clear: both;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -449,24 +450,18 @@ section { position: relative; }
   p { color: $darkSub; }
 }
 
-.home-help {
-  .modal-content {
+.welcome {
+  padding-top: 50px;
+  >div {
+    background: url('/images/welcome.png') no-repeat;
+    margin: 0 auto;
+    width: 510px;
     height: 470px;
-    background-image : url('/images/home_help.jpg');
-  }
-  .modal-lg { width:746px; }
-  .modal-body {
-    text-align: center;
-    margin-top: 0;
-    padding: 45px;
+    padding: 37px 20px 0 20px;
     h3 { font-weight: bold; margin-top: 0; }
-    section {
-      margin: 0 auto;
-      width: 400px;
-      button {
-        background-color: #62FFF4;
-        padding: 2px 12px;
-      }
+    button {
+      background-color: #62FFF4;
+      padding: 2px 12px;
     }
   }
 }

@@ -79,6 +79,10 @@ angular
         url: '/error/:type/:next',
         templateUrl: 'views/error.html'
       })
+      .state('welcome', {
+        url: '/welcome',
+        templateUrl: 'views/welcome.html'
+      })
     ;
   })
   .factory('DATA', function() {
