@@ -243,7 +243,7 @@ aside { float: left; }
   .license { float:left; text-align: left; }
 }
 .message {
-  width: 80%;
+  width: 100%;
   padding: 0.5em;
   margin: 0 auto;
   background-color: $medSub;
@@ -267,6 +267,7 @@ aside { float: left; }
   text-align: center;
   p {text-align: right; }
   img {display: block; float: right; padding: 0.5em; }
+  .credit { float:left; font-size: 80%; }
   // button { display: block; padding: 1em; clear:both; }
   .status { float: right; padding-left:0.5em; }
   .key, .text {font-weight: bold; }

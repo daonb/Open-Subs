@@ -1,4 +1,5 @@
 <div class="candidate">
+  <span class="credit" ng-if="candidate.themarker.text">מאת TheMarker</span>
   <img class="avatar" ng-if="candidate.img_url" ng-src="{{candidate.img_url}}" alt="picture of {{candidate.name}}" />
   <p><strong>
     {{ candidate.themarker.status }}
