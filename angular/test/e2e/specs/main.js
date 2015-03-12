@@ -28,7 +28,7 @@ describe('when clicking the play button', function() {
   });
 
   it('should go to the game start page', function() {
-    expect(browser.driver.getCurrentUrl()).toMatch('/#/home');
+    expect(browser.driver.getCurrentUrl()).toMatch('/#/welcome');
   });
 
 });
@@ -36,7 +36,7 @@ describe('when clicking the play button', function() {
 describe('when clicking the elect button on the welcome page', function (){
   beforeAll(function() {
     // clicking drive
-    element(by.css('div.modal-dialog button.drive')).click();
+    element(by.css('section.welcome button.drive')).click();
   });
   it('should show the sub', function () {
     browser.isElementPresent(element(by.css('section.sub')));
